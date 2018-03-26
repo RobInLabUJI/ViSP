@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 
 # install ViSP packages
-RUN apt-get update && apt-get install -y 
+RUN apt-get update && apt-get install -y \
     libvisp-dev \
     visp-images-data \
     cmake \
