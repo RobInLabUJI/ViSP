@@ -4,6 +4,7 @@ FROM ubuntu:xenial
 RUN apt-get update && apt-get install -y 
     libvisp-dev \
     visp-images-data \
+    cmake \
     && rm -rf /var/lib/apt/lists/
 
 COPY . /opt/ViSP
